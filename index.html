@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>簽完 AD 之後｜奇美醫院 ACP</title>
+<meta name="description" content="奇美醫院預立醫療照護諮商（ACP）團隊：認識預立醫療決定（AD）、AD 啟動路徑、簽署後自評、醫療委任代理人準備與預約諮商。">
+<meta property="og:title" content="簽完 AD 之後｜奇美醫院 ACP">
+<meta property="og:description" content="認識預立醫療決定（AD）、AD 啟動路徑、簽署後自評、代理人準備與預約諮商。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1F6F78">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+:root{
+  --brand:#1F6F78; --brand-2:#2A8C96; --brand-soft:#E6F2F3;
+  --ink:#1B2328; --ink-2:#4B5560; --line:#D6DDE1; --bg:#F7F9FA; --card:#FFFFFF;
+  --ok:#2E7D4F; --ok-soft:#E5F4EA; --warn:#B7791F; --warn-soft:#FFF4DC; --alert:#C2410C; --alert-soft:#FDEBE1;
+  --on-brand:#FFFFFF; --shadow:0 1px 3px rgba(16,24,40,.08),0 1px 2px rgba(16,24,40,.04);
+  --fs:18px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --brand:#5CC2CC; --brand-2:#7FD3DB; --brand-soft:#173338;
+    --ink:#E8EEF0; --ink-2:#AAB6BD; --line:#2E3A40; --bg:#0F1518; --card:#172025;
+    --ok:#6FD39A; --ok-soft:#163626; --warn:#F2C46B; --warn-soft:#3A2E12; --alert:#FF9A6B; --alert-soft:#3D2015; --on-brand:#0F1518; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --brand:#5CC2CC; --brand-2:#7FD3DB; --brand-soft:#173338;
+  --ink:#E8EEF0; --ink-2:#AAB6BD; --line:#2E3A40; --bg:#0F1518; --card:#172025;
+  --ok:#6FD39A; --ok-soft:#163626; --warn:#F2C46B; --warn-soft:#3A2E12; --alert:#FF9A6B; --alert-soft:#3D2015; --on-brand:#0F1518; color-scheme:dark;
+}
+html.big{--fs:21px}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Noto Sans CJK TC","Microsoft JhengHei",system-ui,sans-serif;font-size:var(--fs);line-height:1.7;-webkit-text-size-adjust:100%;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+a{color:var(--brand)}
+h1,h2,h3{line-height:1.35;margin:0 0 .4em}
+h1{font-size:1.45em} h2{font-size:1.25em} h3{font-size:1.08em}
+p{margin:.3em 0 .8em}
+.wrap{max-width:560px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top, 0px);z-index:20;background:var(--card);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:56px;gap:8px}
+.brand{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);line-height:1.25}
+.brand b{font-size:17px;color:var(--brand)} .brand small{font-size:12px;color:var(--ink-2)}
+.tbtn{font:inherit;font-size:15px;min-height:40px;min-width:44px;padding:4px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+
+/* views */
+.view{display:none;padding:16px 0 8px}
+.view.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 16px;margin:0 0 14px;box-shadow:var(--shadow)}
+.card.soft{background:var(--brand-soft);border-color:transparent}
+.kicker{font-size:.78em;color:var(--brand);font-weight:700;letter-spacing:.04em;margin-bottom:4px}
+.lead{font-size:1.06em}
+.muted{color:var(--ink-2);font-size:.88em}
+.small{font-size:.82em}
+.hero{background:var(--brand);color:var(--on-brand);border-radius:20px;padding:24px 20px;margin-bottom:16px}
+.hero .eyebrow{display:block;font-size:.72em;font-weight:700;letter-spacing:.08em;opacity:.85;margin-bottom:6px}
+.hero h1{color:var(--on-brand);text-wrap:balance} .hero p{color:var(--on-brand);opacity:.9;margin:0}
+.roles{display:grid;gap:12px;margin-bottom:16px}
+.role{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:16px;padding:16px;min-height:76px;box-shadow:var(--shadow)}
+.role:active{transform:scale(.99)}
+.role .ic{flex:0 0 46px;height:46px;border-radius:12px;background:var(--brand-soft);display:grid;place-items:center;color:var(--brand)}
+.role b{display:block;font-size:1.05em}
+.role span{display:block;font-size:.84em;color:var(--ink-2);line-height:1.45}
+.role .go{margin-left:auto;color:var(--brand);font-size:1.4em}
+.myth{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:var(--ink);border:2px solid var(--alert);background:var(--alert-soft);border-radius:16px;padding:16px;margin-bottom:16px}
+.myth b{color:var(--alert)}
+.myth .q{flex:0 0 32px;height:32px;border-radius:50%;background:var(--alert);color:var(--on-brand);display:grid;place-items:center;font-weight:900;padding:0;border:0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-weight:700;min-height:52px;padding:10px 18px;border-radius:14px;border:0;background:var(--brand);color:var(--on-brand);text-decoration:none;cursor:pointer;width:100%;margin:6px 0}
+.btn.ghost{background:transparent;color:var(--brand);border:2px solid var(--brand)}
+.btn.call{background:var(--ok);color:var(--on-brand)}
+.btn.line{background:#06C755;color:#FFFFFF}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ul.clean{padding-left:1.2em;margin:.2em 0 .8em} ul.clean li{margin:.25em 0}
+ol.steps{padding-left:1.4em} ol.steps li{margin:.35em 0}
+.tag{display:inline-block;font-size:.72em;font-weight:700;padding:1px 8px;border-radius:999px;background:var(--brand-soft);color:var(--brand);vertical-align:middle}
+.law{font-size:.8em;color:var(--ink-2);border-top:1px dashed var(--line);margin-top:8px;padding-top:6px}
+.pager{font-size:.8em;color:var(--brand);font-weight:700}
+
+/* details */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 10px;box-shadow:var(--shadow)}
+details>summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;display:flex;align-items:center;gap:10px;min-height:56px}
+details>summary::-webkit-details-marker{display:none}
+details>summary .num{flex:0 0 34px;height:34px;border-radius:50%;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-size:.9em}
+details>summary .chev{margin-left:auto;transition:transform .2s;color:var(--ink-2)}
+@media (prefers-reduced-motion: reduce){details>summary .chev{transition:none}}
+details[open]>summary .chev{transform:rotate(90deg)}
+details .body{padding:0 16px 14px}
+.mythbox{background:var(--alert-soft);border-radius:10px;padding:10px 12px;margin:8px 0}
+.mythbox b{color:var(--alert)}
+.arrow{text-align:center;color:var(--brand);font-size:1.3em;line-height:1;margin:-4px 0 6px}
+
+/* scenario */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}
+.chip{font:inherit;font-size:.86em;padding:8px 12px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;min-height:44px;text-align:left}
+.chip[aria-pressed="true"]{border-color:var(--brand);background:var(--brand-soft);color:var(--brand);font-weight:700}
+.sim{display:grid;gap:8px}
+.simstep{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--card);opacity:.45}
+.simstep.pass{opacity:1;border-color:var(--ok);background:var(--ok-soft)}
+.simstep.fail{opacity:1;border-color:var(--alert);background:var(--alert-soft)}
+.simstep .st{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:var(--line);color:var(--ink-2);font-size:.85em}
+.simstep.pass .st{background:var(--ok);color:var(--on-brand)} .simstep.fail .st{background:var(--alert);color:var(--on-brand)}
+.simstep .t{font-weight:700;font-size:.92em} .simstep .n{font-size:.84em;color:var(--ink-2)}
+.outcome{border-radius:14px;padding:14px 16px;margin-top:10px;font-weight:700}
+.outcome.go{background:var(--ok-soft);color:var(--ok);border:2px solid var(--ok)}
+.outcome.ad{background:var(--brand-soft);color:var(--brand);border:2px solid var(--brand)}
+
+/* quiz */
+.q{padding:12px 0;border-bottom:1px solid var(--line)}
+.q:last-child{border-bottom:0}
+.q .qt{margin-bottom:8px}
+.q.missing .qt{color:var(--alert);font-weight:700}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opt{flex:1 1 0;min-width:84px}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt label{display:flex;align-items:center;justify-content:center;min-height:48px;border:2px solid var(--line);border-radius:12px;cursor:pointer;font-weight:700;background:var(--card);user-select:none;padding:4px 6px;text-align:center;font-size:.92em}
+.opt input:checked+label{border-color:var(--brand);background:var(--brand);color:var(--on-brand)}
+.opt input:focus-visible+label{outline:3px solid var(--brand-2);outline-offset:2px}
+.grp{font-weight:700;color:var(--brand);margin:6px 0 0}
+.result,.q{scroll-margin-top:90px}
+.result{display:none;border-radius:16px;padding:18px 16px;margin:14px 0;border:2px solid}
+.result.on{display:block}
+.result.green{background:var(--ok-soft);border-color:var(--ok)}
+.result.yellow{background:var(--warn-soft);border-color:var(--warn)}
+.result.orange{background:var(--alert-soft);border-color:var(--alert)}
+.light{display:flex;align-items:center;gap:10px;font-size:1.15em;font-weight:800;margin-bottom:6px}
+.dot{width:22px;height:22px;border-radius:50%;flex:0 0 22px}
+.green .dot{background:var(--ok)} .yellow .dot{background:var(--warn)} .orange .dot{background:var(--alert)}
+.green .light{color:var(--ok)} .yellow .light{color:var(--warn)} .orange .light{color:var(--alert)}
+input[type=date]{font:inherit;padding:10px;border:2px solid var(--line);border-radius:12px;width:100%;background:var(--card);color:var(--ink);min-height:52px}
+.meter{height:12px;border-radius:999px;background:var(--line);overflow:hidden;margin:6px 0 10px}
+.meter i{display:block;height:100%;background:var(--brand);border-radius:999px}
+.todo{list-style:none;padding:0;margin:.4em 0}
+.todo li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+.todo li b{display:block;font-size:.92em}
+.todo li span{font-size:.88em;color:var(--ink-2)}
+
+.letter{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;font-size:.95em}
+.letter h3{color:var(--brand)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.86em}
+.cmp div{border-radius:10px;padding:10px}
+.cmp .y{background:var(--ok-soft)} .cmp .n{background:var(--alert-soft)}
+.contact-line{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}
+.contact-line:last-child{border-bottom:0}
+.contact-line .k{flex:0 0 4.8em;color:var(--ink-2);font-size:.86em;padding-top:2px}
+footer.foot{font-size:.78em;color:var(--ink-2);text-align:center;padding:10px 16px 24px}
+
+.trial{background:var(--warn-soft);color:var(--ink);border-bottom:1px solid var(--warn);font-size:13px;line-height:1.45}
+.trial .wrap{padding-block:6px}
+
+/* bottom nav */
+nav.bottom{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav.bottom .wrap{display:grid;grid-template-columns:repeat(5,1fr);padding:0 4px}
+nav.bottom a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;color:var(--ink-2);font-size:12px;line-height:1.2;font-weight:700}
+nav.bottom a svg{width:24px;height:24px}
+nav.bottom a.on{color:var(--brand)}
+nav.bottom a.on svg{stroke:var(--brand)}
+
+
+@media print{
+  nav.bottom,header.top,.noprint{display:none!important}
+  body{padding:0;background:#FFFFFF;color:#000000}
+  .view{display:none!important} .view.on{display:block!important}
+}
+</style>
+</head>
+<body>
+
+<div class="trial" role="note"><div class="wrap"><b>試用版</b>｜內容審閱中，電話、費用等資訊請以來電確認為準。</div></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="回首頁">
+      <b>簽完 AD 之後</b>
+      <small>奇美醫院 預立醫療照護諮商（ACP）團隊</small>
+    </a>
+    <button type="button" class="tbtn" id="fsBtn" aria-pressed="false" aria-label="放大字體">字 A+</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ================= HOME ================= -->
+<section class="view" id="v-home" aria-label="首頁">
+  <div class="hero">
+    <span class="eyebrow">病人自主權利法｜預立醫療決定</span>
+    <h1>預立醫療決定（AD），是給自己與家人的一份準備</h1>
+    <p>請選擇最符合您的身分，我們帶您看最需要的內容。</p>
+  </div>
+
+  <div class="roles">
+    <a class="role" href="#about">
+      <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></div>
+      <div><b>我想了解 AD</b><span>什麼是 AD、怎麼簽、怎麼預約</span></div><div class="go">›</div>
+    </a>
+    <a class="role" href="#review">
+      <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+      <div><b>我已簽署 AD</b><span>3 分鐘自評：我的 AD 還是我想要的嗎？</span></div><div class="go">›</div>
+    </a>
+    <a class="role" href="#agent">
+      <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div><b>我是代理人或家人</b><span>代理人準備度自評、給代理人的一封信</span></div><div class="go">›</div>
+    </a>
+  </div>
+
+  <a class="myth" href="#path">
+    <span class="q" aria-hidden="true">?</span>
+    <span><b>「簽了 AD，送急診時醫生就不救我了？」</b><br>
+    不會。看看 AD 啟動前要經過哪五個步驟 ›</span>
+  </a>
+
+  <div class="card soft">
+    <h3>需要協助？</h3>
+    <p class="small" style="margin:0 0 6px">週一至週五 09:00–17:00</p>
+    <a class="btn call" href="tel:+88662812811,53066"><span>撥打 (06)281-2811 分機 53066</span></a>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="view" id="v-about" aria-label="了解 AD">
+  <div class="card">
+    <div class="pager">1 / 3　什麼是 AD？</div>
+    <h2>先寫下，萬一有一天我不能說話時，我希望怎麼被照顧</h2>
+    <p><b>預立醫療決定（AD）</b>是依《病人自主權利法》，在您具完全行為能力時，經過<b>預立醫療照護諮商（ACP）</b>後簽署的文件。它記錄：當您未來符合五款特定臨床條件時，是否接受<b>維持生命治療</b>與<b>人工營養及流體餵養</b>。</p>
+    <div class="cmp">
+      <div class="y"><b>ACP（諮商）</b><br>和醫療團隊、家人一起談的「過程」</div>
+      <div class="y"><b>AD（決定書）</b><br>談完後簽署的「文件」，是 ACP 的成果之一</div>
+    </div>
+    <h3 style="margin-top:14px">AD 怎麼樣才算完成？</h3>
+    <ol class="steps">
+      <li>具完全行為能力的本人</li>
+      <li>在醫療機構完成預立醫療照護諮商；二親等內親屬至少一人參與（若指定醫療委任代理人，代理人也應參與）</li>
+      <li>經公證，或有具完全行為能力者二人以上在場見證</li>
+      <li>註記於健保 IC 卡</li>
+    </ol>
+    <p class="law">依據：病人自主權利法第 8 條、第 9 條</p>
+    <a class="btn ghost" href="https://www.youtube.com/watch?v=Z1uNPXQlAv4" target="_blank" rel="noopener">▶ 看影片：老孫的 ACP 故事</a>
+    <a class="btn ghost" href="#path">簽了就不救？看 AD 啟動路徑 ›</a>
+  </div>
+
+  <div class="card">
+    <div class="pager">2 / 3　簽完之後</div>
+    <h2>簽署 AD 不是終點，而是和家人溝通的起點</h2>
+    <p class="muted">您能表達時，一律以您當下的意願為準。AD 只在您無法清楚表達、且符合法定臨床條件時，才會作為醫療決定的依據。</p>
+    <ol class="steps">
+      <li><b>讓家人知道您的決定與「原因」</b><br><span class="muted">家人需要知道的不只是選了什麼，而是為什麼。</span></li>
+      <li><b>準備好醫療委任代理人</b>（若有指定）<br><span class="muted">把《給醫療委任代理人的一封信》交給他。</span></li>
+      <li><b>收好副本，就醫時主動告知</b><br><span class="muted">說一句「我已簽署 AD」，並讓家人知道副本放在哪裡。</span></li>
+      <li><b>寫下您的價值與心意</b><br><span class="muted">用自己的話寫給家人，比勾選表更能讓人理解您。</span></li>
+    </ol>
+    <a class="btn" href="#review">定期檢視：我的 AD 還是我想要的嗎？</a>
+  </div>
+
+  <div class="card">
+    <div class="pager">3 / 3　預約諮商</div>
+    <h2>預約預立醫療照護諮商</h2>
+    <p>諮商約 30–60 分鐘，由醫師、護理師、社工師等組成的團隊，陪您與家人一起討論。</p>
+    <a class="btn call" href="tel:+88662812811,53066">撥打電話預約</a>
+    <a class="btn ghost" href="#contact">費用、地點與其他預約方式 ›</a>
+  </div>
+</section>
+
+<!-- ================= PATH ================= -->
+<section class="view" id="v-path" aria-label="AD 啟動路徑">
+  <div class="card soft">
+    <div class="kicker">AD 啟動路徑圖</div>
+    <h2>「簽了 AD，萬一送急診，醫生是不是就不救我了？」</h2>
+    <p class="lead" style="margin-bottom:0"><b>不會。</b>AD 啟動前，必須依序通過以下五個步驟；任何一步不符合，醫療團隊都會依一般醫療常規全力救治。</p>
+  </div>
+
+  <details>
+    <summary><span class="num">1</span>發生重大病情變化，且您已無法清楚表達意願<span class="chev">›</span></summary>
+    <div class="body">
+      <p>只要您還能表達，醫療團隊一律以您<b>當下的意願</b>為準，AD 不會被拿來取代您的聲音。</p>
+      <div class="mythbox"><b>迷思：</b>「簽了 AD，一住院就不救。」<br><b>事實：</b>AD 是為了「您無法說話的那一天」準備的。</div>
+    </div>
+  </details>
+  <div class="arrow">↓</div>
+  <details>
+    <summary><span class="num">2</span>是否符合五款法定臨床條件之一<span class="chev">›</span></summary>
+    <div class="body">
+      <ol class="steps">
+        <li><b>末期病人</b></li>
+        <li><b>不可逆轉之昏迷</b>：外傷者觀察超過六個月、非外傷者超過三個月無恢復跡象，或有明確醫學證據確診腦部受嚴重傷害、極難恢復意識</li>
+        <li><b>永久植物人狀態</b>：外傷者超過六個月、非外傷者超過三個月無改善跡象</li>
+        <li><b>極重度失智</b>：臨床失智評估量表（CDR）3 分以上，或功能性評估量表（FAST）7 分以上</li>
+        <li><b>其他經中央主管機關公告之情形</b>：<span>目前公告為多發性系統萎縮症、肌萎縮性側索硬化症等 11 類疾病</span></li>
+      </ol>
+      <div class="mythbox"><b>迷思：</b>「年紀大了、有點失智，就會啟動。」<br><b>事實：</b>失智須達「極重度」標準才符合。</div>
+      <p class="law">依據：病人自主權利法第 14 條第 1 項；本院預立醫療決定啟動檢核表</p>
+    </div>
+  </details>
+  <div class="arrow">↓</div>
+  <details>
+    <summary><span class="num">3</span>法定確認程序<span class="chev">›</span></summary>
+    <div class="body">
+      <p>由<b>二位</b>具相關專科醫師資格之醫師確診，並經緩和醫療團隊<b>至少二次</b>照會確認。</p>
+      <div class="mythbox"><b>迷思：</b>「一位醫生說了就算。」<br><b>事實：</b>法律要求多位專業人員層層確認。</div>
+      <p class="law">依據：病人自主權利法第 14 條第 2 項</p>
+    </div>
+  </details>
+  <div class="arrow">↓</div>
+  <details>
+    <summary><span class="num">4</span>醫療團隊與代理人、家屬說明與討論<span class="chev">›</span></summary>
+    <div class="body">
+      <p>確認 AD 內容，說明接下來的照護計畫；家人的擔心也在這時被聽見。</p>
+      <p class="law">依據：本院預立醫療決定啟動檢核表</p>
+    </div>
+  </details>
+  <div class="arrow">↓</div>
+  <details>
+    <summary><span class="num">5</span>依您對「該款條件」勾選的選項執行<span class="chev">›</span></summary>
+    <div class="body">
+      <ul class="clean">
+        <li><b>不希望接受</b>：終止、撤除或不施行維持生命治療或人工營養及流體餵養之全部或一部</li>
+        <li><b>限時嘗試</b>：在您寫下的期間內嘗試治療，之後再評估</li>
+        <li><b>由醫療委任代理人代為決定</b></li>
+        <li><b>希望接受</b>：依一般醫療常規提供</li>
+      </ul>
+      <div class="mythbox"><b>迷思：</b>「不接受維生治療，就是什麼都不做。」<br><b>事實：</b>無論哪一種選擇，醫療團隊都會提供緩和醫療與舒適照護。</div>
+      <p class="law">依據：病人自主權利法第 14 條第 1 項、第 16 條</p>
+    </div>
+  </details>
+
+  <div class="card" style="margin-top:18px">
+    <div class="kicker">情境模擬</div>
+    <h3>如果是這樣的情況，AD 會啟動嗎？</h3>
+    <p class="muted small">點選一個情境，看看會停在哪一步。</p>
+    <div class="chips" id="scChips" role="group" aria-label="情境"></div>
+    <div class="sim" id="sim" aria-live="polite"></div>
+    <div id="simOut"></div>
+    <p class="muted small" style="margin-top:10px">情境為簡化示例；實際判定由醫療團隊依法定程序個別評估。</p>
+  </div>
+</section>
+
+<!-- ================= REVIEW (5D) ================= -->
+<section class="view" id="v-review" aria-label="我的 AD 自評">
+  <div class="card soft">
+    <div class="kicker">3 分鐘自評</div>
+    <h2>我的 AD，還是我想要的嗎？</h2>
+    <p style="margin:0">人的想法會隨著年齡、健康與家庭而改變。請依「簽署或上次檢視之後」的情況作答。</p>
+  </div>
+
+  <form class="card" id="rForm" novalidate>
+    <p class="grp">一、生活與健康的變化</p>
+    <div id="rA"></div>
+    <p class="grp">二、想法的變化</p>
+    <div id="rB"></div>
+    <p class="grp">三、溝通與準備</p>
+    <div id="rC"></div>
+    <p id="rMiss" class="small" style="color:var(--alert);display:none" role="alert">還有題目沒回答，請看紅字題目。</p>
+    <button class="btn" type="submit">看結果</button>
+  </form>
+
+  <div class="result" id="rRes" aria-live="polite"></div>
+</section>
+
+<!-- ================= AGENT ================= -->
+<section class="view" id="v-agent" aria-label="代理人與家人">
+  <div class="card soft">
+    <div class="kicker">給醫療委任代理人與家人</div>
+    <h2>您說出的，是「他的」意願</h2>
+    <p style="margin:0">代理人是意願人聲音的延伸：能照他寫的做，就照他寫的做；沒寫到的，就用您最了解的他，替他設想。</p>
+  </div>
+
+  <div class="card">
+    <h3>代理人準備度自評（10 題）</h3>
+    <p class="muted small">這不是考試，也不是法定資格審查；每一個「不確定」都會對應一個具體的下一步。</p>
+    <form id="aForm" novalidate>
+      <div id="aQ"></div>
+      <p id="aMiss" class="small" style="color:var(--alert);display:none" role="alert">還有題目沒回答，請看紅字題目。</p>
+      <button class="btn" type="submit">看結果</button>
+    </form>
+  </div>
+  <div class="result" id="aRes" aria-live="polite"></div>
+
+  <details id="letter">
+    <summary><span class="num">✉</span>給醫療委任代理人的一封信<span class="chev">›</span></summary>
+    <div class="body letter">
+      <p>親愛的醫療委任代理人，您好：</p>
+      <p>有一位重視您的人，選擇了您，成為他（她）的「醫療委任代理人」。這代表在他清醒、能自己做主的時候，把一份深切的信任交付給了您。寫這封信，是想讓您先認識這個角色——好讓那一天若真的來臨時，您不會孤單，也不會慌張。</p>
+      <h3>一、這個角色是什麼？</h3>
+      <p>醫療委任代理人，是當事人依《病人自主權利法》親自委任、並經您書面同意的人。當有一天他因意識昏迷或無法清楚表達時，由您代替他，向醫療團隊轉達他的醫療意願。<b>您說出的，是「他的」意願，而不是您自己的想法。</b></p>
+      <h3>二、當那一天到來，您主要做兩件事</h3>
+      <ul class="clean">
+        <li><b>執行他已寫下的決定</b>：確保他的 AD 被看見、被尊重、被執行。</li>
+        <li><b>替他做未寫到的判斷</b>：依「他平常會怎麼想、怎麼選」來判斷。</li>
+      </ul>
+      <h3>三、誰可以、誰不可以擔任</h3>
+      <div class="cmp">
+        <div class="y"><b>✓ 可以</b><br>成年且具完全行為能力；了解他的價值觀；願意誠實以他的立場發聲</div>
+        <div class="n"><b>✗ 依法不可</b>（意願人的繼承人除外）<br>受遺贈人；遺體或器官指定受贈人；其他因其死亡而獲利之人</div>
+      </div>
+      <p class="law">依據：病人自主權利法第 10 條</p>
+      <h3>四、您能做什麼、不必承擔什麼</h3>
+      <ul class="clean">
+        <li><b>能做</b>：依他的 AD 代為表達醫療意願，協助醫療團隊理解他希望被如何照顧。</li>
+        <li><b>不必承擔</b>：您不是在「決定他的生死」，而是在傳達他早已替自己做好的決定。</li>
+        <li><b>界線</b>：不得違背他已清楚寫下的 AD；角色僅限醫療意願表達，不涉及財產或其他法律事務。</li>
+      </ul>
+      <p class="muted small">提醒：本信僅供溝通與提醒，不具法律效力。正式委任須依法定程序完成。</p>
+    </div>
+  </details>
+
+  <div class="card">
+    <h3>給家人：您不是見證者，而是一起準備的人</h3>
+    <p>趁現在，請他親口說說「為什麼這樣決定」。可以這樣開口：</p>
+    <ul class="clean">
+      <li>「你做這個決定時，最在意的是什麼？」</li>
+      <li>「如果有一天真的要照你的決定做，你最希望我們記得什麼？」</li>
+      <li>「我們家裡，誰可能最難接受？我們現在可以先做什麼？」</li>
+    </ul>
+    <p class="law">法律規定，家屬、代理人等關係人，不得妨礙醫療機構或醫師依病人就醫療選項決定之作為（病人自主權利法第 4 條第 2 項）。</p>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="view" id="v-contact" aria-label="預約與聯絡">
+  <div class="card">
+    <h2>預約與聯絡</h2>
+    <a class="btn call" href="tel:+88662812811,53066">撥打 (06)281-2811 分機 53066</a>
+    <p class="small muted" style="margin:2px 0 6px">若手機沒有自動撥號，請直接撥打：<b id="telText" style="user-select:all;color:var(--ink)">06-2812811 轉 53066</b> <button type="button" class="tbtn" id="copyTel" style="min-height:36px;font-size:13px">複製號碼</button></p>
+    <a class="btn ghost" href="https://sub.chimei.org.tw/59310/index.php/cmhacp/cmhacp01" target="_blank" rel="noopener">線上預約申請單（官網）</a>
+    <span class="btn line" aria-disabled="true" style="opacity:.75;cursor:default">LINE 官方帳號（籌備中）</span>
+    <div style="margin-top:10px">
+      <div class="contact-line"><div class="k">服務時間</div><div>週一至週五 09:00–17:00</div></div>
+      <div class="contact-line"><div class="k">地址</div><div>台南市永康區中華路 901 號　奇美醫院<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A5%87%E7%BE%8E%E9%86%AB%E9%99%A2%20%E5%8F%B0%E5%8D%97%E5%B8%82%E6%B0%B8%E5%BA%B7%E5%8D%80%E4%B8%AD%E8%8F%AF%E8%B7%AF901%E8%99%9F" target="_blank" rel="noopener">開啟地圖 ›</a></div></div>
+      <div class="contact-line"><div class="k">官網</div><div><a href="https://sub.chimei.org.tw/59310/" target="_blank" rel="noopener">奇美醫院 ACP 官網</a><br><span class="muted small">含健保卡註記查詢連結、衛教影片</span></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>費用與補助（115 年度）</h3>
+    <ul class="clean">
+      <li>符合條件者，可由健保給付預立醫療照護諮商</li>
+      <li>本院優惠：兩人同行一人免費</li>
+      <li>持身障手冊、低收入戶、中低收入戶證明者，可申請補助</li>
+      <li>變更與撤回 AD：本院收取行政費用 340 元</li>
+    </ul>
+    <p class="muted small">各方案條件可能調整，請來電確認最新資訊。</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  本網站內容依《病人自主權利法》及其施行細則編寫，僅供衛教參考；個別情況請與醫療團隊討論。<br>
+  奇美醫院 預立醫療照護諮商（ACP）團隊｜v1.0 試用版（115 年 10 月）
+</footer>
+
+<nav class="bottom" aria-label="主要導覽">
+  <div class="wrap">
+    <a href="#about" data-v="about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>了解 AD</a>
+    <a href="#path" data-v="path"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>啟動路徑</a>
+    <a href="#review" data-v="review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>我的自評</a>
+    <a href="#agent" data-v="agent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>代理人</a>
+    <a href="#contact" data-v="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>預約</a>
+  </div>
+</nav>
+
+<script>
+(function(){
+  const TEL = 'tel:+88662812811,53066';
+  const store = {
+    get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
+    set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  };
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  /* ---------- router ---------- */
+  const views = ['home','about','path','review','agent','contact'];
+  function route(){
+    let v = (location.hash || '#home').slice(1).split('?')[0];
+    if(!views.includes(v)) v = 'home';
+    views.forEach(id => document.getElementById('v-'+id).classList.toggle('on', id === v));
+    document.querySelectorAll('nav.bottom a').forEach(a => a.classList.toggle('on', a.dataset.v === v));
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange', route);
+
+  /* ---------- font size ---------- */
+  const fsBtn = document.getElementById('fsBtn');
+  function setBig(on){ document.documentElement.classList.toggle('big', on); fsBtn.setAttribute('aria-pressed', on); fsBtn.textContent = on ? '字 A−' : '字 A+'; store.set('acp_big', on ? '1':'0'); }
+  fsBtn.addEventListener('click', () => setBig(!document.documentElement.classList.contains('big')));
+  setBig(store.get('acp_big') === '1');
+
+  /* ---------- scenario simulator ---------- */
+  const STEP_T = ['無法清楚表達意願','符合五款臨床條件之一','二位專科醫師確診＋緩和醫療團隊至少二次照會','與代理人、家屬說明討論','依 AD 選項執行'];
+  const SC = [
+    {k:'意識清楚，因肺炎住院', r:[[0,'您仍能清楚表達意願']], out:['go','AD 不會啟動。醫療團隊直接與您討論，一律以您當下的意願為準。']},
+    {k:'車禍送急診，意識不清', r:[[1,'已無法清楚表達意願'],[0,'急性期，尚未能判定符合任何一款臨床條件']], out:['go','AD 不會啟動。醫療團隊依一般醫療常規全力救治。']},
+    {k:'中風後昏迷一個月（非外傷）', r:[[1,'已無法清楚表達意願'],[0,'非外傷昏迷須觀察超過三個月無恢復跡象（或有明確醫學證據確診腦部嚴重受損、極難恢復意識），才符合「不可逆轉之昏迷」']], out:['go','尚未符合法定條件時，醫療團隊持續治療並定期評估。']},
+    {k:'中度失智，因感染住院', r:[[1,'假設已無法清楚表達意願'],[0,'極重度失智須達 CDR 3 分以上或 FAST 7 分以上；中度失智尚未符合']], out:['go','AD 不會啟動。醫療團隊依一般醫療常規治療感染。']},
+    {k:'癌症末期，已意識不清', r:[[1,'已無法清楚表達意願'],[1,'符合第 1 款「末期病人」'],[1,'完成法定確認程序'],[1,'與代理人、家屬說明照護計畫'],[1,'依 AD 中「末期病人」這一款勾選的選項執行']], out:['ad','依您的 AD 執行，並同時提供緩和醫療與舒適照護。']}
+  ];
+  const chips = document.getElementById('scChips'), sim = document.getElementById('sim'), simOut = document.getElementById('simOut');
+  function drawSim(idx){
+    const s = idx == null ? null : SC[idx];
+    sim.innerHTML = STEP_T.map((t,i) => {
+      const r = s && s.r[i];
+      const cls = r ? (r[0] ? 'pass':'fail') : '';
+      const mark = r ? (r[0] ? '✓':'✕') : (i+1);
+      return `<div class="simstep ${cls}"><div class="st">${mark}</div><div><div class="t">步驟 ${i+1}　${t}</div>${r?`<div class="n">${esc(r[1])}</div>`:''}</div></div>`;
+    }).join('');
+    simOut.innerHTML = s ? `<div class="outcome ${s.out[0]}">${s.out[0]==='go'?'結果：':'結果：'}${esc(s.out[1])}</div>` : '';
+    chips.querySelectorAll('.chip').forEach((c,i) => c.setAttribute('aria-pressed', i === idx));
+  }
+  SC.forEach((s,i) => { const b = document.createElement('button'); b.type='button'; b.className='chip'; b.textContent = s.k; b.addEventListener('click', () => drawSim(i)); chips.appendChild(b); });
+  drawSim(null);
+
+  /* ---------- quiz helpers ---------- */
+  function qHTML(name, text, opts){
+    return `<div class="q" data-q="${name}"><div class="qt">${text}</div><div class="opts">` +
+      opts.map((o,i) => `<div class="opt"><input type="radio" id="${name}_${i}" name="${name}" value="${o[0]}"><label for="${name}_${i}">${o[1]}</label></div>`).join('') +
+      `</div></div>`;
+  }
+  function collect(form, names, missEl){
+    const ans = {}; let miss = 0;
+    names.forEach(n => {
+      const v = form.querySelector(`input[name="${n}"]:checked`);
+      const q = form.querySelector(`[data-q="${n}"]`);
+      q.classList.toggle('missing', !v);
+      if(v) ans[n] = v.value; else miss++;
+    });
+    missEl.style.display = miss ? 'block' : 'none';
+    if(miss){ form.querySelector('.q.missing').scrollIntoView({behavior:'smooth', block:'center'}); return null; }
+    return ans;
+  }
+  const YN = [['y','是'],['n','否']];
+
+  /* ---------- 5D self-review ---------- */
+  const RA = [
+    ['a1','我被診斷出新的重大疾病，或原有慢性病明顯惡化'],
+    ['a2','我的行動、吞嚥或記憶等身體功能明顯變差'],
+    ['a3','我曾住院，或開始接受居家醫療、入住長照機構'],
+    ['a4','我的家庭有重大變化（例如喪偶、離婚、子女成年）'],
+    ['a5','我的醫療委任代理人生病、過世、失聯，或不願再擔任'],
+    ['a6','距離簽署或上次檢視，已超過 3–5 年'],
+  ];
+  const RB = [
+    ['b1','重讀 AD 後，有選項我現在不確定或想修改'],
+    ['b2','我的宗教信仰或人生價值觀有所改變'],
+  ];
+  const RC = [
+    ['c1','我的家人知道我的決定，也知道背後的原因', YN],
+    ['c2','我的代理人有我最新的 AD 副本與聯絡方式', [['y','是'],['n','否'],['na','未指定代理人']]],
+  ];
+  const rForm = document.getElementById('rForm');
+  document.getElementById('rA').innerHTML = RA.map(q => qHTML(q[0], q[1], YN)).join('');
+  document.getElementById('rB').innerHTML = RB.map(q => qHTML(q[0], q[1], YN)).join('');
+  document.getElementById('rC').innerHTML = RC.map(q => qHTML(q[0], q[1], q[2])).join('');
+  const rRes = document.getElementById('rRes');
+
+  function addYears(d, y){ const x = new Date(d); x.setFullYear(x.getFullYear()+y); return x; }
+  function ymd(d){ return d.toISOString().slice(0,10); }
+  function gcalHref(dateStr){
+    const d = dateStr.replace(/-/g,'');
+    const e = new Date(dateStr+'T00:00:00'); e.setDate(e.getDate()+1);
+    const d2 = e.getFullYear()+String(e.getMonth()+1).padStart(2,'0')+String(e.getDate()).padStart(2,'0');
+    return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent('重新檢視我的預立醫療決定（AD）') + '&dates=' + d + '/' + d2 + '&details=' + encodeURIComponent('拿出 AD 重讀一次，並和家人、代理人聊聊。需要協助請撥 (06)281-2811 分機 53066。');
+  }
+  function icsHref(dateStr){
+    const d = dateStr.replace(/-/g,'');
+    const now = new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d+Z$/,'Z');
+    const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//ChiMei ACP//AD Review//ZH-TW','CALSCALE:GREGORIAN','BEGIN:VEVENT',
+      'UID:adreview-'+d+'-'+Math.random().toString(36).slice(2)+'@acp','DTSTAMP:'+now,'DTSTART;VALUE=DATE:'+d,
+      'SUMMARY:重新檢視我的預立醫療決定（AD）',
+      'DESCRIPTION:拿出 AD 重讀一次，並和家人、代理人聊聊。需要協助請撥 (06)281-2811 分機 53066。',
+      'BEGIN:VALARM','TRIGGER:-P7D','ACTION:DISPLAY','DESCRIPTION:下週記得重新檢視 AD','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+    return 'data:text/calendar;charset=utf-8,' + encodeURIComponent(ics);
+  }
+  function lineHref(text){ return 'https://line.me/R/msg/text/?' + encodeURIComponent(text); }
+
+  rForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const names = [...RA, ...RB, ...RC].map(q => q[0]);
+    const a = collect(rForm, names, document.getElementById('rMiss'));
+    if(!a) return;
+    const changeA = RA.filter(q => q[0] !== 'a6' && a[q[0]] === 'y');
+    const changeB = RB.filter(q => a[q[0]] === 'y');
+    const timeOnly = a.a6 === 'y';
+    const famNo = a.c1 === 'n', hcaNo = a.c2 === 'n';
+    let level = 'green';
+    if(changeA.length || changeB.length) level = 'orange';
+    else if(timeOnly || famNo || hcaNo) level = 'yellow';
+
+    let h = '';
+    if(level === 'orange'){
+      h += `<div class="light"><span class="dot"></span>建議預約，重新檢視您的 AD</div>`;
+      h += `<p>您勾選了以下變化：</p><ul class="clean">` + [...changeA, ...changeB].map(q => `<li>${q[1]}</li>`).join('') + `</ul>`;
+      if(a.a5 === 'y' && changeA.length === 1 && !changeB.length){
+        h += `<p>如果只是要<b>更換或新增醫療委任代理人</b>，AD 的內容可以不變，只需辦理代理人異動。</p>`;
+      } else {
+        h += `<p>這些變化不一定代表要改 AD，但值得和醫療團隊再談一次，確認 AD 仍符合您現在的心意。</p>`;
+      }
+      h += `<div class="card" style="background:var(--warn-soft);border-color:var(--warn);box-shadow:none"><b>想法改變了，請盡早辦理</b><br><span class="small">依病人自主權利法施行細則第 8 條，若想改為「不接受」，在完成變更手續前，醫師仍須依原 AD 處理。不要等到住院才辦。</span></div>`;
+      h += `<p class="small">辦理時請本人攜帶：身分證、健保卡、AD 正本。</p>`;
+      h += `<a class="btn call" href="${TEL}">撥打電話預約</a>`;
+    } else if(level === 'yellow'){
+      h += `<div class="light"><span class="dot"></span>AD 不一定要改，但建議做這幾件事</div><ul class="todo">`;
+      if(timeOnly) h += `<li><b>拿出 AD 重讀一次</b><span>如果內容仍符合您的心意，就不需要變更；有疑問再來電討論。</span></li>`;
+      if(famNo) h += `<li><b>和家人聊聊您的決定與原因</b><span>可以這樣開口：「如果有一天我不能說話了，我希望你們記得，對我來說最重要的是……」</span></li>`;
+      if(hcaNo) h += `<li><b>把 AD 副本與《一封信》交給代理人</b><span>並確認彼此最新的電話。<a href="#agent">看代理人專區 ›</a></span></li>`;
+      h += `</ul>`;
+    } else {
+      h += `<div class="light"><span class="dot"></span>您的 AD 目前看起來仍符合您的心意</div><p>建議每 3–5 年，或生活、健康出現重大變化時，再做一次這份自評。</p>`;
+    }
+    if(level !== 'orange'){
+      const next = ymd(addYears(new Date(), 3));
+      h += `<p style="margin-top:10px"><b>設定下次檢視提醒</b></p><input type="date" id="nextDate" value="${next}" aria-label="下次檢視日期"><div class="row2"><a class="btn ghost" id="icsBtn" href="${icsHref(next)}" download="AD檢視提醒.ics">手機行事曆</a><a class="btn ghost" id="gcalBtn" href="${gcalHref(next)}" target="_blank" rel="noopener">Google 日曆</a></div>`;
+    }
+    const shareText = level === 'orange' ? '我做了「我的 AD 還是我想要的嗎？」自評，結果建議我預約重新檢視 AD，想找時間跟你聊聊。'
+      : level === 'yellow' ? '我做了「我的 AD 還是我想要的嗎？」自評，想找時間跟你聊聊我的預立醫療決定和原因。'
+      : '我做了「我的 AD 還是我想要的嗎？」自評，我的決定沒有改變，想再跟你確認一次你知道我的想法。';
+    h += `<a class="btn line" href="${lineHref(shareText)}" target="_blank" rel="noopener">用 LINE 告訴家人</a>`;
+    h += `<button type="button" class="btn ghost noprint" onclick="window.print()">列印結果</button>`;
+    h += `<p class="muted small">本自評僅供參考，不是醫療或法律判定。</p>`;
+    rRes.className = 'result on ' + level;
+    rRes.innerHTML = h;
+    const nd = document.getElementById('nextDate');
+    if(nd) nd.addEventListener('change', () => { if(nd.value){ document.getElementById('icsBtn').href = icsHref(nd.value); document.getElementById('gcalBtn').href = gcalHref(nd.value); } });
+    rRes.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+
+  /* ---------- agent readiness ---------- */
+  const AQ = [
+    ['我說得出他最在乎的三件事。','請他填寫手冊「附頁一　我的價值與心意」，或約個時間聊聊「什麼對你最重要」。'],
+    ['我知道他在各款臨床條件下，對維持生命治療與人工營養各選了什麼。','請和他一起把 AD 的內容讀一次。'],
+    ['我知道他為什麼這樣選。','問他：「你做這個決定時，最在意的是什麼？」'],
+    ['我知道 AD 正本、副本放在哪裡。','請他給您一份副本，並記下正本存放的位置。'],
+    ['我明白我要傳達的是「他的」意願，不是我自己的想法。','請讀下方《一封信》第一段。這是代理人最重要的一句話。'],
+    ['如果其他家人反對，我能說明他的意願與原因。','建議趁現在辦一次家庭聚會，讓其他家人也聽他親口說明。'],
+    ['我知道代理的範圍只限於醫療意願表達，不涉及財產或其他法律事務。','請讀下方《一封信》第四段。'],
+    ['他和醫療團隊都有我最新的聯絡方式。','電話或住址變更時請告訴他；聯絡不上代理人，可能影響 AD 的執行。'],
+    ['如果有一天我覺得做不到，我知道可以和他討論改由他人擔任，或增加順位代理人。','代理人可以指定二人以上並排定順位；異動須由意願人本人辦理。'],
+    ['我讀過《給醫療委任代理人的一封信》。','本頁下方可以直接閱讀全文。'],
+  ];
+  const A3 = [['y','是'],['u','不確定'],['n','否']];
+  const aForm = document.getElementById('aForm');
+  document.getElementById('aQ').innerHTML = AQ.map((q,i) => qHTML('h'+i, `${i+1}. ${q[0]}`, A3)).join('');
+  const aRes = document.getElementById('aRes');
+  aForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const names = AQ.map((q,i) => 'h'+i);
+    const a = collect(aForm, names, document.getElementById('aMiss'));
+    if(!a) return;
+    const yes = names.filter(n => a[n] === 'y').length;
+    const todo = AQ.map((q,i) => [q, a['h'+i]]).filter(x => x[1] !== 'y');
+    const level = yes >= 9 ? 'green' : yes >= 6 ? 'yellow' : 'orange';
+    let h = `<div class="light"><span class="dot"></span>${yes >= 9 ? '您已做好大部分的準備' : yes >= 6 ? '您已有不錯的準備，還有幾件事可以補上' : '建議和意願人一起，再多準備一些'}</div>`;
+    h += `<div class="small">已準備 ${yes} / 10 項</div><div class="meter" aria-hidden="true"><i style="width:${yes*10}%"></i></div>`;
+    if(todo.length){
+      h += `<p><b>接下來可以做的事：</b></p><ul class="todo">` + todo.map(x => `<li><b>${x[0][0]}</b><span>${x[0][1]}</span></li>`).join('') + `</ul>`;
+    }
+    if(a.h4 !== 'y'){
+      h += `<div class="card" style="background:var(--alert-soft);border-color:var(--alert);box-shadow:none"><b>最重要的一句話</b><br>您說出的，是「他的」意願，而不是您自己的想法。如果您擔心自己做不到，請和意願人或 ACP 團隊談談。</div>`;
+    }
+    h += `<a class="btn ${yes < 6 ? 'call' : 'ghost'}" href="${TEL}">和 ACP 團隊聊聊</a>`;
+    h += `<a class="btn ghost" href="#agent" onclick="document.getElementById('letter').open=true;setTimeout(()=>document.getElementById('letter').scrollIntoView({behavior:'smooth'}),50);return false;">閱讀《給醫療委任代理人的一封信》</a>`;
+    h += `<p class="muted small">本自評不是法定資格審查；代理人資格依病人自主權利法第 10 條。</p>`;
+    aRes.className = 'result on ' + level;
+    aRes.innerHTML = h;
+    aRes.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+
+  const ct = document.getElementById('copyTel');
+  if(ct) ct.addEventListener('click', () => {
+    const t = '06-2812811 轉 53066';
+    const sel = () => { const b = document.getElementById('telText'); const r = document.createRange(); r.selectNodeContents(b); const g = getSelection(); g.removeAllRanges(); g.addRange(r); ct.textContent = '已選取'; };
+    try{ navigator.clipboard.writeText(t).then(() => { ct.textContent = '已複製'; setTimeout(() => ct.textContent = '複製號碼', 1800); }, sel); }catch(e){ sel(); }
+  });
+
+  route();
+})();
+</script>
+</body>
+</html>
